@@ -3,27 +3,46 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3A8ADE8524BE4777001113DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8ADE8424BE4777001113DD /* AppDelegate.swift */; };
 		3A8ADE8724BE4777001113DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8ADE8624BE4777001113DD /* SceneDelegate.swift */; };
-		3A8ADE8924BE4777001113DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8ADE8824BE4777001113DD /* ContentView.swift */; };
 		3A8ADE8B24BE4778001113DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8ADE8A24BE4778001113DD /* Assets.xcassets */; };
 		3A8ADE8E24BE4778001113DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8ADE8D24BE4778001113DD /* Preview Assets.xcassets */; };
 		3A8ADE9124BE4778001113DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8ADE8F24BE4778001113DD /* LaunchScreen.storyboard */; };
+		3A8ADE9924BE4BB5001113DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A8ADE9824BE4BB5001113DD /* GoogleService-Info.plist */; };
+		3A8ADE9B24BE4E02001113DD /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8ADE9A24BE4E02001113DD /* RegistrationView.swift */; };
+		3A8ADE9E24BE4E41001113DD /* M7SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3A8ADE9D24BE4E41001113DD /* M7SwiftUI */; };
+		3A90810A24BE53BD003AA7FB /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90810924BE53BD003AA7FB /* AuthService.swift */; };
+		3A90810C24BE5663003AA7FB /* NewAnnouncementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90810B24BE5663003AA7FB /* NewAnnouncementView.swift */; };
+		3A90810E24BE5A13003AA7FB /* AnnouncementListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90810D24BE5A13003AA7FB /* AnnouncementListView.swift */; };
+		3A90811024BF8CC7003AA7FB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90810F24BF8CC7003AA7FB /* LoginView.swift */; };
+		3A90811224BF9FBF003AA7FB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90811124BF9FBF003AA7FB /* RootView.swift */; };
+		3A90811424BFA081003AA7FB /* UserAnnouncementListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90811324BFA081003AA7FB /* UserAnnouncementListView.swift */; };
+		5A4477C850E016C6088F0B7F /* Pods_CO_Riders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321E3BE51654BB25DBBA2A92 /* Pods_CO_Riders.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		291092C4122A895BA3F6C488 /* Pods-CO Riders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CO Riders.release.xcconfig"; path = "Target Support Files/Pods-CO Riders/Pods-CO Riders.release.xcconfig"; sourceTree = "<group>"; };
+		321E3BE51654BB25DBBA2A92 /* Pods_CO_Riders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CO_Riders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8ADE8124BE4777001113DD /* CO Riders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CO Riders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8ADE8424BE4777001113DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8ADE8624BE4777001113DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A8ADE8824BE4777001113DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3A8ADE8A24BE4778001113DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A8ADE8D24BE4778001113DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3A8ADE9024BE4778001113DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A8ADE9224BE4778001113DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8ADE9824BE4BB5001113DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A8ADE9A24BE4E02001113DD /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		3A90810924BE53BD003AA7FB /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		3A90810B24BE5663003AA7FB /* NewAnnouncementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAnnouncementView.swift; sourceTree = "<group>"; };
+		3A90810D24BE5A13003AA7FB /* AnnouncementListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementListView.swift; sourceTree = "<group>"; };
+		3A90810F24BF8CC7003AA7FB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3A90811124BF9FBF003AA7FB /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		3A90811324BFA081003AA7FB /* UserAnnouncementListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnouncementListView.swift; sourceTree = "<group>"; };
+		E297BB1C7DFF539F44B70B92 /* Pods-CO Riders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CO Riders.debug.xcconfig"; path = "Target Support Files/Pods-CO Riders/Pods-CO Riders.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8ADE9E24BE4E41001113DD /* M7SwiftUI in Frameworks */,
+				5A4477C850E016C6088F0B7F /* Pods_CO_Riders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +63,8 @@
 			children = (
 				3A8ADE8324BE4777001113DD /* CO Riders */,
 				3A8ADE8224BE4777001113DD /* Products */,
+				EA5AE61270872FDA1F518645 /* Pods */,
+				4C63DB8F0E1B6597E87FB003 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +81,17 @@
 			children = (
 				3A8ADE8424BE4777001113DD /* AppDelegate.swift */,
 				3A8ADE8624BE4777001113DD /* SceneDelegate.swift */,
-				3A8ADE8824BE4777001113DD /* ContentView.swift */,
+				3A90810824BE53BD003AA7FB /* Services */,
+				3A8ADE9A24BE4E02001113DD /* RegistrationView.swift */,
+				3A90811124BF9FBF003AA7FB /* RootView.swift */,
+				3A90810F24BF8CC7003AA7FB /* LoginView.swift */,
+				3A90810D24BE5A13003AA7FB /* AnnouncementListView.swift */,
+				3A90811324BFA081003AA7FB /* UserAnnouncementListView.swift */,
+				3A90810B24BE5663003AA7FB /* NewAnnouncementView.swift */,
 				3A8ADE8A24BE4778001113DD /* Assets.xcassets */,
 				3A8ADE8F24BE4778001113DD /* LaunchScreen.storyboard */,
 				3A8ADE9224BE4778001113DD /* Info.plist */,
+				3A8ADE9824BE4BB5001113DD /* GoogleService-Info.plist */,
 				3A8ADE8C24BE4778001113DD /* Preview Content */,
 			);
 			path = "CO Riders";
@@ -75,6 +105,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3A90810824BE53BD003AA7FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3A90810924BE53BD003AA7FB /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4C63DB8F0E1B6597E87FB003 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				321E3BE51654BB25DBBA2A92 /* Pods_CO_Riders.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA5AE61270872FDA1F518645 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E297BB1C7DFF539F44B70B92 /* Pods-CO Riders.debug.xcconfig */,
+				291092C4122A895BA3F6C488 /* Pods-CO Riders.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,15 +137,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A8ADE9524BE4778001113DD /* Build configuration list for PBXNativeTarget "CO Riders" */;
 			buildPhases = (
+				C2BE647BB09AAD25DD8C65D3 /* [CP] Check Pods Manifest.lock */,
 				3A8ADE7D24BE4777001113DD /* Sources */,
 				3A8ADE7E24BE4777001113DD /* Frameworks */,
 				3A8ADE7F24BE4777001113DD /* Resources */,
+				534E186F5608F8CB2296F42E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "CO Riders";
+			packageProductDependencies = (
+				3A8ADE9D24BE4E41001113DD /* M7SwiftUI */,
+			);
 			productName = "CO Riders";
 			productReference = 3A8ADE8124BE4777001113DD /* CO Riders.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +179,9 @@
 				Base,
 			);
 			mainGroup = 3A8ADE7824BE4777001113DD;
+			packageReferences = (
+				3A8ADE9C24BE4E41001113DD /* XCRemoteSwiftPackageReference "M7SwiftUI" */,
+			);
 			productRefGroup = 3A8ADE8224BE4777001113DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,20 +198,69 @@
 			files = (
 				3A8ADE9124BE4778001113DD /* LaunchScreen.storyboard in Resources */,
 				3A8ADE8E24BE4778001113DD /* Preview Assets.xcassets in Resources */,
+				3A8ADE9924BE4BB5001113DD /* GoogleService-Info.plist in Resources */,
 				3A8ADE8B24BE4778001113DD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		534E186F5608F8CB2296F42E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CO Riders/Pods-CO Riders-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CO Riders/Pods-CO Riders-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CO Riders/Pods-CO Riders-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2BE647BB09AAD25DD8C65D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CO Riders-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3A8ADE7D24BE4777001113DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A90811224BF9FBF003AA7FB /* RootView.swift in Sources */,
 				3A8ADE8524BE4777001113DD /* AppDelegate.swift in Sources */,
+				3A90811024BF8CC7003AA7FB /* LoginView.swift in Sources */,
+				3A90810E24BE5A13003AA7FB /* AnnouncementListView.swift in Sources */,
 				3A8ADE8724BE4777001113DD /* SceneDelegate.swift in Sources */,
-				3A8ADE8924BE4777001113DD /* ContentView.swift in Sources */,
+				3A8ADE9B24BE4E02001113DD /* RegistrationView.swift in Sources */,
+				3A90811424BFA081003AA7FB /* UserAnnouncementListView.swift in Sources */,
+				3A90810A24BE53BD003AA7FB /* AuthService.swift in Sources */,
+				3A90810C24BE5663003AA7FB /* NewAnnouncementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +394,7 @@
 		};
 		3A8ADE9624BE4778001113DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E297BB1C7DFF539F44B70B92 /* Pods-CO Riders.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +415,7 @@
 		};
 		3A8ADE9724BE4778001113DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 291092C4122A895BA3F6C488 /* Pods-CO Riders.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -342,6 +456,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A8ADE9C24BE4E41001113DD /* XCRemoteSwiftPackageReference "M7SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aromanov91/M7SwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A8ADE9D24BE4E41001113DD /* M7SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A8ADE9C24BE4E41001113DD /* XCRemoteSwiftPackageReference "M7SwiftUI" */;
+			productName = M7SwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3A8ADE7924BE4777001113DD /* Project object */;
 }
