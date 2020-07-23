@@ -15,17 +15,18 @@ struct RegistrationView: View {
     
     @State var email = ""
     @State var password = ""
+    @State var error = ""
+    @State var helperStyle: M7TextFieldHelperStyle = .none
     
     var body: some View {
         
         ScrollView {
-        
-            TextField("Login", text: $email)
+
+            M7TextField("E-mail", text: $email).padding(.horizontal)
             
-            TextField("Password", text: $password)
+            M7TextField("Пароль", text: $password, helperText: $error, helperStyle: $helperStyle).padding(.horizontal)
             
-            Button(action: {
-                
+            M7Button(style: .primary, size: .l, round: .m, shadow: false, action: {
                 AuthService.shared.registr(email: self.email, password: self.password, confirmPassword: self.password) { (result) in
                     
                     switch result {
@@ -34,18 +35,19 @@ struct RegistrationView: View {
                         
                         print("Registration Success \(String(describing: user.email))")
                         
-                    case .failure(_):
-                        print("Registration Error")
+                    case .failure(let error):
+                    print("Registration Error")
+                    self.helperStyle = .errorText
+                    self.error = error.localizedDescription
                     }
                     
                 }
-                
-                
-                
             }) {
-                Text("Registration")
-            }
-        }
+                Text("Регистрация")
+                }.padding()
+
+
+        }.navigationBarTitle("Зарегистрироваться")
     }
     
 }

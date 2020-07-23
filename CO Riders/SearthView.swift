@@ -69,7 +69,7 @@ class AnnouncementViewModel: ObservableObject {
   }
 }
 
-struct AnnouncementListView: View {
+struct SearthView: View {
     
     
     //var data = AnnouncementTaskRepository.announcements
@@ -91,6 +91,10 @@ struct AnnouncementListView: View {
             self.viewModel.fetchData()
           }
         }
+        
+        
+        
+        
 
         
         

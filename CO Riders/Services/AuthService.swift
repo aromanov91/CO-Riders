@@ -16,6 +16,10 @@ class AuthService {
     private let auth = Auth.auth()
     
     
+    
+    
+    
+    
     func login(email: String?, password: String?, completion: @escaping (Result<User, Error>) -> Void) {
         
         auth.signIn(withEmail: email!, password: password!) { (result, error) in
@@ -44,4 +48,12 @@ class AuthService {
         })
     }
     
+    
+    func signOut() {
+        do {
+            try auth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
 }
