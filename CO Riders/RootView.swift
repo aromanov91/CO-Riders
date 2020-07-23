@@ -21,7 +21,7 @@ struct RootTabView: View {
                            Text("Поиск")
                        }
                    }.tag(1)
-               ProfileView()
+               ProfileNavigationView()
                    .tabItem {
                        VStack {
                            Image(systemName: "person.crop.circle.fill")

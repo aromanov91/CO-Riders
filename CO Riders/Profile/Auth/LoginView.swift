@@ -12,6 +12,7 @@ import Firebase
 import FirebaseAuth
 
 struct LoginView: View {
+    
     @State var email = ""
     @State var password = ""
     @State var error = ""
@@ -19,13 +20,24 @@ struct LoginView: View {
     
     var body: some View {
         
-        ScrollView {
+        ScrollView() {
             
-            M7Text("Бронируйте услуги, задавайте вопросы и сохраняйте объявления в избранное", style: .paragraph1).padding()
+            HStack {
             
-            M7TextField("E-mail", text: $email).padding(.horizontal)
+            M7Text("Бронируйте услуги, задавайте вопросы и сохраняйте объявления в избранное", style: .paragraph1)
+                
+                Spacer()
             
-            M7TextField("Пароль", text: $password, helperText: $error, helperStyle: $helperStyle).padding(.horizontal)
+            }.padding(.top, 8)
+            .padding(.bottom, 24)
+            
+            
+            
+            M7TextField("E-mail", text: $email)
+                .padding(.bottom)
+            
+            M7TextField("Пароль", text: $password, helperText: $error, helperStyle: $helperStyle)
+                .padding(.bottom)
             
             M7Button(style: .primary, size: .l, round: .m, shadow: false, action: {
                 AuthService.shared.login(email: self.email, password: self.password) { (result) in
@@ -45,22 +57,17 @@ struct LoginView: View {
                 }
             }) {
                 Text("Вход")
-                }.padding()
-            
-            //M7Button(style: .link, size: .l, round: .none, shadow: false, action: {
+            }
+            .padding(.bottom)
+
                 NavigationLink(destination: RegistrationView()) {
                     Text("Зарегистрироваться")
                 }
-//            }) {
-//                
-//            }
-//
-//
             
-        }.navigationBarTitle("Вход")
+        }.padding([.leading, .bottom, .trailing])
+            .navigationBarTitle("Вход")
         
-        
-        //.background(Color.secondary)
+
     }
 }
 

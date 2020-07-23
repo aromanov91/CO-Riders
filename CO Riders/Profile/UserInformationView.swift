@@ -13,7 +13,6 @@ struct UserInformationView: View {
     
     @ObservedObject var session = SessionStore()
     
-    
     var body: some View {
         Form {
             HStack {
@@ -40,7 +39,7 @@ struct UserInformationView: View {
                 Text("Выйти")
             }
             
-        }
+        }.navigationBarTitle("Аккаунт")
     }
 }
 
