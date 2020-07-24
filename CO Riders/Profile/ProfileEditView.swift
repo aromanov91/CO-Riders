@@ -1,0 +1,68 @@
+//
+//  ProfileEditorView.swift
+//  CO Riders
+//
+//  Created by 18391981 on 24.07.2020.
+//  Copyright © 2020 romanov. All rights reserved.
+//
+
+import SwiftUI
+import M7SwiftUI
+
+struct ProfileEditView: View {
+    
+    @State var name = ""
+    @State var company = ""
+    @State var about = ""
+    @State var phone = ""
+    @State var instagram = ""
+    
+    var body: some View {
+        ScrollView {
+            
+            VStack(spacing: 24) {
+            
+                HStack {
+                    Image(systemName: "circle.fill")
+                        .resizable()
+                        .frame(width: 68, height: 68)
+                        .foregroundColor(Color.gray)
+                M7TextField("Как вас зовут", text: $name)
+                    
+                }
+                
+                M7Surface(elevation: .z1, padding: .s) {
+                
+                HStack {
+                    
+                    M7Text("Если вы представляете компанию, то сможете указать ее позднее в  профиле", style: .paragraph2)
+                    Spacer()
+                }
+                    
+                }
+                
+                M7TextField("Название компании", text: $name)
+                
+                M7TextField("Расскажите о себе и услугах, которые вы предоставляете", text: $name)
+                
+                M7TextField("Номер телефона", text: $name)
+                
+                M7Button( size: .m, action: {}) {
+                    Text("Подключите инстаграм")
+                }
+                
+                M7Button(style: .primary, action: {}) {
+                    Text("Сохранить")
+                }
+                
+            }.padding()
+            
+        }.navigationBarTitle("Расскажите о себе", displayMode: .inline)
+    }
+}
+
+struct ProfileEditorView_Previews: PreviewProvider {
+    static var previews: some View {
+        ProfileEditView()
+    }
+}

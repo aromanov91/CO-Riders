@@ -40,6 +40,9 @@ struct UserInformationView: View {
             }
             
         }.navigationBarTitle("Аккаунт")
+            .navigationBarItems(trailing: NavigationLink(destination: ProfileEditView()) {
+                Text("Редактировать")
+            } )
     }
 }
 

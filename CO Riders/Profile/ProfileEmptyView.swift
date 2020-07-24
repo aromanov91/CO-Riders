@@ -26,11 +26,14 @@ struct ProfileEmptyView: View {
                 HStack {
                     
                     M7Text("Вы еще не разместили ни одного объявления", style: .title1).frame(width: 300.0)
-                    
                 }
+                
                 Spacer()
+                
                 M7Text("Расскажите миру о своих услугах. Расместите объявление и найдите новых клиентов!", style: .paragraph1).frame(width: 300.0)
+                
                 Spacer()
+                
                 M7Button(style: .primary, action: {}) {
                     Text("Новое объявление")
                 }.frame(width: 300.0)
@@ -39,7 +42,7 @@ struct ProfileEmptyView: View {
             
             Spacer()
             
-        }//.navigationBarTitle("Профиль")
+        }
     }
     
 }

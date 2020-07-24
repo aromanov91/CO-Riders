@@ -23,13 +23,14 @@ struct UserInformationLinkView: View {
                         .resizable()
                         .frame(width: 48, height: 48)
                         .foregroundColor(Color.gray)
-                    Text(session.session?.email ?? "User")
+                    M7Text(session.session?.email ?? "User")
                     
                     Image(systemName: "chevron.right")
                     Spacer()
                 }
             }
         }
+          
     }
 }
 

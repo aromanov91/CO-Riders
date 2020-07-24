@@ -33,6 +33,7 @@
 		3AB0C2F024CA213A0057A298 /* UserInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0C2EF24CA213A0057A298 /* UserInformationView.swift */; };
 		3AD2FB8B24CA31ED0016D39B /* ProfileEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2FB8A24CA31ED0016D39B /* ProfileEmptyView.swift */; };
 		3AD2FB8D24CA36CE0016D39B /* UserInformationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2FB8C24CA36CE0016D39B /* UserInformationLinkView.swift */; };
+		3AD2FB9124CA3AE60016D39B /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2FB9024CA3AE60016D39B /* ProfileEditView.swift */; };
 		5A4477C850E016C6088F0B7F /* Pods_CO_Riders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321E3BE51654BB25DBBA2A92 /* Pods_CO_Riders.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		3AB0C2EF24CA213A0057A298 /* UserInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationView.swift; sourceTree = "<group>"; };
 		3AD2FB8A24CA31ED0016D39B /* ProfileEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEmptyView.swift; sourceTree = "<group>"; };
 		3AD2FB8C24CA36CE0016D39B /* UserInformationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationLinkView.swift; sourceTree = "<group>"; };
+		3AD2FB9024CA3AE60016D39B /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
 		E297BB1C7DFF539F44B70B92 /* Pods-CO Riders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CO Riders.debug.xcconfig"; path = "Target Support Files/Pods-CO Riders/Pods-CO Riders.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +156,7 @@
 				3AD2FB8A24CA31ED0016D39B /* ProfileEmptyView.swift */,
 				3AD2FB8C24CA36CE0016D39B /* UserInformationLinkView.swift */,
 				3AB0C2EF24CA213A0057A298 /* UserInformationView.swift */,
+				3AD2FB9024CA3AE60016D39B /* ProfileEditView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				3A8ADE8524BE4777001113DD /* AppDelegate.swift in Sources */,
 				3AD2FB8D24CA36CE0016D39B /* UserInformationLinkView.swift in Sources */,
 				3A90811024BF8CC7003AA7FB /* LoginView.swift in Sources */,
+				3AD2FB9124CA3AE60016D39B /* ProfileEditView.swift in Sources */,
 				3A90810E24BE5A13003AA7FB /* SearthView.swift in Sources */,
 				3A8ADE8724BE4777001113DD /* SceneDelegate.swift in Sources */,
 				3A8ADE9B24BE4E02001113DD /* RegistrationView.swift in Sources */,
