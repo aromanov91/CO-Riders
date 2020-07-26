@@ -28,6 +28,7 @@ struct ProfileEditView: View {
                         .resizable()
                         .frame(width: 68, height: 68)
                         .foregroundColor(Color.gray)
+                    
                     M7TextField("Как вас зовут", text: $name)
                     
                 }

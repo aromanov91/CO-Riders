@@ -11,10 +11,6 @@ import M7SwiftUI
 
 struct NewRideCategoryView: View {
     
-    //@State var select: String?
-    
-    @State var tag = ""
-    
     @ObservedObject var newRideViewModel = NewRideViewModel()
     
     var body: some View {

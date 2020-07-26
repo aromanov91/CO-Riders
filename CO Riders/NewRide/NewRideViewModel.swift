@@ -12,12 +12,13 @@ class NewRideViewModel: ObservableObject {
     
     @Published var category: String?
     
-    @Published var mountain: String?
+    @Published var subcategory: String?
     
-    var categories = ["В горах", "На воде", "Городские виды спорта", "Здоровье", "Гастрономия", "Для детей", "Продажа оборудования"]
+    @Published var serviceType: String?
     
-    
-    var subCategories = [
+    let categories = ["В горах", "На воде", "Городские виды спорта", "Здоровье", "Гастрономия", "Для детей", "Продажа оборудования"]
+
+    var subcategories = [
         
         ["Трекинг и походы",
          "МТБ",
@@ -59,6 +60,11 @@ class NewRideViewModel: ObservableObject {
          "Скейт",
          "Йога"]
     ]
+    
+    var serviceTypes = ["Гиды",
+                        "Инструкторы",
+                        "Прокат оборудования",
+                        "Прочие услуги"]
     
     
     

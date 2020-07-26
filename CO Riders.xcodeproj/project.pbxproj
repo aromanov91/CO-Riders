@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A06E9E724CB78CC003571EA /* NewRideCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A06E9E624CB78CC003571EA /* NewRideCategoryView.swift */; };
+		3A09AF2324CE095C00806260 /* NewRideTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A09AF2224CE095C00806260 /* NewRideTreeView.swift */; };
 		3A8ADE8524BE4777001113DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8ADE8424BE4777001113DD /* AppDelegate.swift */; };
 		3A8ADE8724BE4777001113DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8ADE8624BE4777001113DD /* SceneDelegate.swift */; };
 		3A8ADE8B24BE4778001113DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8ADE8A24BE4778001113DD /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		291092C4122A895BA3F6C488 /* Pods-CO Riders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CO Riders.release.xcconfig"; path = "Target Support Files/Pods-CO Riders/Pods-CO Riders.release.xcconfig"; sourceTree = "<group>"; };
 		321E3BE51654BB25DBBA2A92 /* Pods_CO_Riders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CO_Riders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A06E9E624CB78CC003571EA /* NewRideCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRideCategoryView.swift; sourceTree = "<group>"; };
+		3A09AF2224CE095C00806260 /* NewRideTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRideTreeView.swift; sourceTree = "<group>"; };
 		3A8ADE8124BE4777001113DD /* CO Riders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CO Riders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8ADE8424BE4777001113DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8ADE8624BE4777001113DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				3AC41C3D24CB8079004100DB /* NewRideViewModel.swift */,
 				3A06E9E624CB78CC003571EA /* NewRideCategoryView.swift */,
 				3AC41C3F24CB83CB004100DB /* NewRideTwoView.swift */,
+				3A09AF2224CE095C00806260 /* NewRideTreeView.swift */,
 				3AB6A26924CD895000307A3A /* NewRideCreateFormView.swift */,
 			);
 			path = NewRide;
@@ -362,6 +365,7 @@
 				3AB0C2F024CA213A0057A298 /* UserInformationView.swift in Sources */,
 				3AD2FB8B24CA31ED0016D39B /* ProfileEmptyView.swift in Sources */,
 				3A90810C24BE5663003AA7FB /* NewAnnouncementView.swift in Sources */,
+				3A09AF2324CE095C00806260 /* NewRideTreeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,7 +25,6 @@ struct NewRideTwoView: View {
             if element == category {
                 self.number = index
             }
-            
         }
     }
     
@@ -33,10 +32,23 @@ struct NewRideTwoView: View {
         
         M7List {
             
-            ForEach(self.newRideViewModel.subCategories[number], id: \.self) { item in
-                NavigationLink(destination: NewRideCreateFormView(category: category ?? "nil", type: item), tag: item, selection: self.$newRideViewModel.mountain) {
+            ForEach(self.newRideViewModel.subcategories[number], id: \.self) { item in
+                
+                
+                if self.number < 3 {
+                
+                NavigationLink(destination: NewRideTreeView(category: category ?? "nil", type: item), tag: item, selection: self.$newRideViewModel.subcategory) {
                     
                     M7Row(item)
+                }
+                    
+                } else {
+                    
+                    NavigationLink(destination: NewRideCreateFormView(category: category ?? "nil", type: item), tag: item, selection: self.$newRideViewModel.subcategory) {
+                        
+                        M7Row(item)
+                    }
+
                 }
             }
             
