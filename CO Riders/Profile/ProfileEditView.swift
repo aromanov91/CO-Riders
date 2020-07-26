@@ -21,23 +21,24 @@ struct ProfileEditView: View {
         ScrollView {
             
             VStack(spacing: 24) {
-            
+                
                 HStack {
+                    
                     Image(systemName: "circle.fill")
                         .resizable()
                         .frame(width: 68, height: 68)
                         .foregroundColor(Color.gray)
-                M7TextField("Как вас зовут", text: $name)
+                    M7TextField("Как вас зовут", text: $name)
                     
                 }
                 
                 M7Surface(elevation: .z1, padding: .s) {
-                
-                HStack {
                     
-                    M7Text("Если вы представляете компанию, то сможете указать ее позднее в  профиле", style: .paragraph2)
-                    Spacer()
-                }
+                    HStack {
+                        
+                        M7Text("Если вы представляете компанию, то сможете указать ее позднее в  профиле", style: .paragraph2)
+                        Spacer()
+                    }
                     
                 }
                 

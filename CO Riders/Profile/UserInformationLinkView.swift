@@ -30,7 +30,6 @@ struct UserInformationLinkView: View {
                 }
             }
         }
-          
     }
 }
 

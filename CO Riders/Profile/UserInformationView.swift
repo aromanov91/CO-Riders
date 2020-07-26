@@ -14,27 +14,29 @@ struct UserInformationView: View {
     @ObservedObject var session = SessionStore()
     
     var body: some View {
+        
         Form {
             HStack {
                 Image(systemName: "circle.fill")
                     .resizable()
                     .frame(width: 48, height: 48)
                     .foregroundColor(Color.gray)
+                
                 Text(self.session.session?.uid ?? "")
             }
+            
             HStack {
                 Text("E-mail")
                 Spacer()
                 Text(self.session.session?.email ?? "")
             }
+            
             HStack {
                 Text("Телефон")
             }
             
             Button(action: {
-                
                 AuthService.shared.signOut()
-                
             }) {
                 Text("Выйти")
             }

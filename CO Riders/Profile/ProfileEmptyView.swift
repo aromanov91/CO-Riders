@@ -12,10 +12,7 @@ import M7SwiftUI
 struct ProfileEmptyView: View {
     var body: some View {
         
-        
-        
         ScrollView {
-            
             
             UserInformationLinkView().padding()
             
@@ -34,17 +31,13 @@ struct ProfileEmptyView: View {
                 
                 Spacer()
                 
-                M7Button(style: .primary, action: {}) {
-                    Text("Новое объявление")
-                }.frame(width: 300.0)
+                NavigationLink("Новое объявление", destination: NewRideCategoryView())
                 
             }
             
             Spacer()
-            
         }
     }
-    
 }
 
 

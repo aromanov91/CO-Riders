@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A06E9E724CB78CC003571EA /* NewRideCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A06E9E624CB78CC003571EA /* NewRideCategoryView.swift */; };
 		3A8ADE8524BE4777001113DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8ADE8424BE4777001113DD /* AppDelegate.swift */; };
 		3A8ADE8724BE4777001113DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8ADE8624BE4777001113DD /* SceneDelegate.swift */; };
 		3A8ADE8B24BE4778001113DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8ADE8A24BE4778001113DD /* Assets.xcassets */; };
@@ -31,6 +32,9 @@
 		3A90811224BF9FBF003AA7FB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90811124BF9FBF003AA7FB /* RootView.swift */; };
 		3A90811424BFA081003AA7FB /* ProfileNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90811324BFA081003AA7FB /* ProfileNavigationView.swift */; };
 		3AB0C2F024CA213A0057A298 /* UserInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0C2EF24CA213A0057A298 /* UserInformationView.swift */; };
+		3AB6A26A24CD895000307A3A /* NewRideCreateFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A26924CD895000307A3A /* NewRideCreateFormView.swift */; };
+		3AC41C3E24CB8079004100DB /* NewRideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC41C3D24CB8079004100DB /* NewRideViewModel.swift */; };
+		3AC41C4024CB83CB004100DB /* NewRideTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC41C3F24CB83CB004100DB /* NewRideTwoView.swift */; };
 		3AD2FB8B24CA31ED0016D39B /* ProfileEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2FB8A24CA31ED0016D39B /* ProfileEmptyView.swift */; };
 		3AD2FB8D24CA36CE0016D39B /* UserInformationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2FB8C24CA36CE0016D39B /* UserInformationLinkView.swift */; };
 		3AD2FB9124CA3AE60016D39B /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2FB9024CA3AE60016D39B /* ProfileEditView.swift */; };
@@ -40,6 +44,7 @@
 /* Begin PBXFileReference section */
 		291092C4122A895BA3F6C488 /* Pods-CO Riders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CO Riders.release.xcconfig"; path = "Target Support Files/Pods-CO Riders/Pods-CO Riders.release.xcconfig"; sourceTree = "<group>"; };
 		321E3BE51654BB25DBBA2A92 /* Pods_CO_Riders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CO_Riders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A06E9E624CB78CC003571EA /* NewRideCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRideCategoryView.swift; sourceTree = "<group>"; };
 		3A8ADE8124BE4777001113DD /* CO Riders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CO Riders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8ADE8424BE4777001113DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8ADE8624BE4777001113DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +71,9 @@
 		3A90811124BF9FBF003AA7FB /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		3A90811324BFA081003AA7FB /* ProfileNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationView.swift; sourceTree = "<group>"; };
 		3AB0C2EF24CA213A0057A298 /* UserInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationView.swift; sourceTree = "<group>"; };
+		3AB6A26924CD895000307A3A /* NewRideCreateFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRideCreateFormView.swift; sourceTree = "<group>"; };
+		3AC41C3D24CB8079004100DB /* NewRideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRideViewModel.swift; sourceTree = "<group>"; };
+		3AC41C3F24CB83CB004100DB /* NewRideTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRideTwoView.swift; sourceTree = "<group>"; };
 		3AD2FB8A24CA31ED0016D39B /* ProfileEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEmptyView.swift; sourceTree = "<group>"; };
 		3AD2FB8C24CA36CE0016D39B /* UserInformationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationLinkView.swift; sourceTree = "<group>"; };
 		3AD2FB9024CA3AE60016D39B /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
@@ -85,6 +93,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A06E9E824CB78D8003571EA /* NewRide */ = {
+			isa = PBXGroup;
+			children = (
+				3AC41C3D24CB8079004100DB /* NewRideViewModel.swift */,
+				3A06E9E624CB78CC003571EA /* NewRideCategoryView.swift */,
+				3AC41C3F24CB83CB004100DB /* NewRideTwoView.swift */,
+				3AB6A26924CD895000307A3A /* NewRideCreateFormView.swift */,
+			);
+			path = NewRide;
+			sourceTree = "<group>";
+		};
 		3A8ADE7824BE4777001113DD = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +129,7 @@
 				3A8ADE8624BE4777001113DD /* SceneDelegate.swift */,
 				3A90810824BE53BD003AA7FB /* Services */,
 				3A90811124BF9FBF003AA7FB /* RootView.swift */,
+				3A06E9E824CB78D8003571EA /* NewRide */,
 				3A8CA4B624C79BA200736AE4 /* Profile */,
 				3A90810D24BE5A13003AA7FB /* SearthView.swift */,
 				3A90810B24BE5663003AA7FB /* NewAnnouncementView.swift */,
@@ -227,7 +247,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = romanov;
 				TargetAttributes = {
 					3A8ADE8024BE4777001113DD = {
@@ -327,7 +347,11 @@
 			files = (
 				3A90811224BF9FBF003AA7FB /* RootView.swift in Sources */,
 				3A8ADE8524BE4777001113DD /* AppDelegate.swift in Sources */,
+				3AC41C4024CB83CB004100DB /* NewRideTwoView.swift in Sources */,
 				3AD2FB8D24CA36CE0016D39B /* UserInformationLinkView.swift in Sources */,
+				3AC41C3E24CB8079004100DB /* NewRideViewModel.swift in Sources */,
+				3AB6A26A24CD895000307A3A /* NewRideCreateFormView.swift in Sources */,
+				3A06E9E724CB78CC003571EA /* NewRideCategoryView.swift in Sources */,
 				3A90811024BF8CC7003AA7FB /* LoginView.swift in Sources */,
 				3AD2FB9124CA3AE60016D39B /* ProfileEditView.swift in Sources */,
 				3A90810E24BE5A13003AA7FB /* SearthView.swift in Sources */,
@@ -381,6 +405,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -405,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -441,6 +466,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -459,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -479,6 +505,7 @@
 				DEVELOPMENT_TEAM = VF3N89U52T;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "CO Riders/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,6 +527,7 @@
 				DEVELOPMENT_TEAM = VF3N89U52T;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "CO Riders/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
