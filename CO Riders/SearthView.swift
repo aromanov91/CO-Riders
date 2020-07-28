@@ -7,97 +7,87 @@
 //
 
 import SwiftUI
+import M7SwiftUI
 import Firebase
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-
-//struct Announcement: Codable, Identifiable {
-//  @DocumentID var id: String? // (2)
-//  var title: String
-//}
-//
-//class AnnouncementTaskRepository: ObservableObject {
-//
-//    var announcements = [Announcement]()
-//
-//  var db = Firestore.firestore() // (1)
-//
-//    init() {
-//    loadData()
-//  }
-//
-//  private func loadData() {
-//    db.collection("user").addSnapshotListener { (querySnapshot, error) in // (2)
-//      if let querySnapshot = querySnapshot {
-//        self.announcements = querySnapshot.documents.compactMap { document -> Announcement? in // (3)
-//          try? document.data(as: Announcement.self) // (4)
-//        }
-//      }
-//    }
-//  }
-//
-//  // more code to follow
-//}
-
-
-struct Announcement: Identifiable {
-  var id: String = UUID().uuidString
-  var name: String
+struct RideModel: Identifiable {
+    var id: String
+    var name: String
+    var description: String
+    var price: String
+    var address: String
+    var category: String
+    var type: String
+    var serviceType: String
 }
 
-class AnnouncementViewModel: ObservableObject {
-  @Published var books = [Announcement]()
-  
-  private var db = Firestore.firestore()
-  
-  func fetchData() {
-    db.collection("announcements").addSnapshotListener { (querySnapshot, error) in
-      guard let documents = querySnapshot?.documents else {
-        print("No documents")
-        return
-      }
-
-      self.books = documents.map { queryDocumentSnapshot -> Announcement in
-        let data = queryDocumentSnapshot.data()
-        let name = data["name"] as? String ?? ""
+class SearthViewModel: ObservableObject {
+    
+    private var db = Firestore.firestore()
+    
+    @Published var data = [RideModel]()
+    
+    func fetchData() {
         
-
-        return Announcement(id: .init(), name: name)
-      }
+        db.collection("rides").addSnapshotListener { (snap, err) in
+            DispatchQueue.main.async {
+                if err != nil {
+                    print((err?.localizedDescription)!)
+                    return
+                } else {
+                    print("no errors")
+                    for i in snap!.documentChanges {
+                        let id = i.document.documentID
+                        let name = i.document.get("name") as! String
+                        let description = i.document.get("description") as! String
+                        let price = i.document.get("price") as! String
+                        let address = i.document.get("address") as! String
+                        let category = i.document.get("category") as! String
+                        let type = i.document.get("type") as! String
+                        let serviceType = i.document.get("serviceType") as! String
+                        
+                        self.data.append(RideModel(id: id,
+                                                   name: name,
+                                                   description: description,
+                                                   price: price,
+                                                   address: address,
+                                                   category: category,
+                                                   type: type,
+                                                   serviceType: serviceType))
+                    }
+                    print(self.data)
+                }
+            }
+        }
     }
-  }
 }
 
 struct SearthView: View {
     
-    
-    //var data = AnnouncementTaskRepository.announcements
-    
-     @ObservedObject var viewModel = AnnouncementViewModel()
+    @ObservedObject var viewModel = SearthViewModel()
     
     var body: some View {
-       
-
+        
         NavigationView {
-            List(viewModel.books) { book in // (2)
-            VStack(alignment: .leading) {
-                Text(book.name)
-                .font(.headline)
+            List(viewModel.data) { book in // (2)
+                
+                NavigationLink(destination: RideDetailView(raide: book)) {
+                    
+                    VStack(alignment: .leading) {
+                        M7Text(book.name, style: .title3)
+                        M7Text(book.price, style: .paragraph1)
+                        M7Text(book.address, style: .paragraph1)
+                        
+                    }
+                }
             }
-          }
-          .navigationBarTitle("Books")
-          .onAppear() { // (3)
-            self.viewModel.fetchData()
-          }
+            .navigationBarTitle("Rides")
+            .onAppear() { // (3)
+                self.viewModel.fetchData()
+            }
         }
-        
-        
-        
-        
-
-        
-        
     }
 }
 

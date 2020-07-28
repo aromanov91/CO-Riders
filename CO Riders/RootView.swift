@@ -8,24 +8,36 @@
 
 import SwiftUI
 import M7SwiftUI
+import Combine
+
+class RootTabViewModel: ObservableObject {
+    @Published var currentTab = 0
+}
+
+
 
 struct RootTabView: View {
-    @State private var currentTab = 0
+    
+    @State var currentTab = 0
+
+    @EnvironmentObject var viewModel: RootTabViewModel
 
        var body: some View {
-           TabView(selection: $currentTab) {
+        TabView(selection: $currentTab) {
+            
                SearthView()
                    .tabItem {
                        VStack {
                            Image(systemName: "list.bullet.below.rectangle")
-                           Text("Поиск")
+                           M7Text("Поиск")
                        }
                    }.tag(1)
+            
                ProfileNavigationView()
                    .tabItem {
                        VStack {
                            Image(systemName: "person.crop.circle.fill")
-                           Text("Профиль")
+                           M7Text("Профиль")
                        }
                    }.tag(2)
            }

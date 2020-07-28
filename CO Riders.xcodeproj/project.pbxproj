@@ -32,6 +32,7 @@
 		3A90811024BF8CC7003AA7FB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90810F24BF8CC7003AA7FB /* LoginView.swift */; };
 		3A90811224BF9FBF003AA7FB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90811124BF9FBF003AA7FB /* RootView.swift */; };
 		3A90811424BFA081003AA7FB /* ProfileNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90811324BFA081003AA7FB /* ProfileNavigationView.swift */; };
+		3A9AE46124CF613400EC8EE7 /* RideDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9AE46024CF613400EC8EE7 /* RideDetailView.swift */; };
 		3AB0C2F024CA213A0057A298 /* UserInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB0C2EF24CA213A0057A298 /* UserInformationView.swift */; };
 		3AB6A26A24CD895000307A3A /* NewRideCreateFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A26924CD895000307A3A /* NewRideCreateFormView.swift */; };
 		3AC41C3E24CB8079004100DB /* NewRideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC41C3D24CB8079004100DB /* NewRideViewModel.swift */; };
@@ -72,6 +73,7 @@
 		3A90810F24BF8CC7003AA7FB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3A90811124BF9FBF003AA7FB /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		3A90811324BFA081003AA7FB /* ProfileNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationView.swift; sourceTree = "<group>"; };
+		3A9AE46024CF613400EC8EE7 /* RideDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideDetailView.swift; sourceTree = "<group>"; };
 		3AB0C2EF24CA213A0057A298 /* UserInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationView.swift; sourceTree = "<group>"; };
 		3AB6A26924CD895000307A3A /* NewRideCreateFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRideCreateFormView.swift; sourceTree = "<group>"; };
 		3AC41C3D24CB8079004100DB /* NewRideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRideViewModel.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				3A06E9E824CB78D8003571EA /* NewRide */,
 				3A8CA4B624C79BA200736AE4 /* Profile */,
 				3A90810D24BE5A13003AA7FB /* SearthView.swift */,
+				3A9AE46024CF613400EC8EE7 /* RideDetailView.swift */,
 				3A90810B24BE5663003AA7FB /* NewAnnouncementView.swift */,
 				3A8ADE8A24BE4778001113DD /* Assets.xcassets */,
 				3A8ADE8F24BE4778001113DD /* LaunchScreen.storyboard */,
@@ -348,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A9AE46124CF613400EC8EE7 /* RideDetailView.swift in Sources */,
 				3A90811224BF9FBF003AA7FB /* RootView.swift in Sources */,
 				3A8ADE8524BE4777001113DD /* AppDelegate.swift in Sources */,
 				3AC41C4024CB83CB004100DB /* NewRideTwoView.swift in Sources */,

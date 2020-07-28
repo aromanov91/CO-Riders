@@ -34,6 +34,8 @@ struct NewRideCreateFormView: View {
         db = Firestore.firestore()
     }
     
+    @State var m = false
+    
     var body: some View {
         
         ScrollView {
@@ -48,9 +50,14 @@ struct NewRideCreateFormView: View {
                 
                 M7TextField("Адрес", text: $address)
                 
-                M7Button(style: .primary, action: { saveNewRide() }) {
+                M7Button(style: .primary, action: { saveNewRide()
+                 
+                    m = true
+                }) {
                     Text("Создать")
                 }
+                
+                NavigationLink(destination: SearthView(), isActive: $m) { EmptyView() }
                 
             }.padding()
             
