@@ -11,7 +11,7 @@ import M7SwiftUI
 
 struct UserInformationLinkView: View {
     
-    @ObservedObject var session = SessionStore()
+    @ObservedObject var session = SessionService()
     
     var body: some View {
         

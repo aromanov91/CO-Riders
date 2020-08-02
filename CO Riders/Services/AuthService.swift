@@ -53,25 +53,3 @@ class AuthService {
         }
     }
 }
-
-class SessionStore : ObservableObject {
-    @Published var session: User?
-    var isLoggedIn: Bool { session != nil}
-    var handle: AuthStateDidChangeListenerHandle?
-    
-    init () {
-        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            if let user = user {
-                self.session = user
-            } else {
-                self.session = nil
-            }
-        }
-    }
-    
-    deinit {
-        if let handle = handle {
-            Auth.auth().removeStateDidChangeListener(handle)
-        }
-    }
-}

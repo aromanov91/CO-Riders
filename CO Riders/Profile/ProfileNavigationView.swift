@@ -13,7 +13,7 @@ import FirebaseAuth
 
 struct ProfileNavigationView: View {
     
-    @ObservedObject var session = SessionStore()
+    @ObservedObject var session = SessionService()
     
     var body: some View {
         
@@ -24,6 +24,8 @@ struct ProfileNavigationView: View {
                 if session.isLoggedIn {
                     
                     //UserInformationView()
+                    
+                    //StartingView()
                     ProfileEmptyView()
                     
                 } else {

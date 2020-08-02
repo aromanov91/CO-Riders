@@ -8,10 +8,6 @@
 
 import SwiftUI
 import M7SwiftUI
-import Firebase
-import FirebaseAuth
-import FirebaseFirestore
-import FirebaseFirestoreSwift
 
 struct RegistrationView: View {
     
@@ -20,16 +16,12 @@ struct RegistrationView: View {
     @State var error = ""
     @State var helperStyle: M7TextFieldHelperStyle = .none
     
-    var db: Firestore!
-
-    init() {
-
-        let settings = FirestoreSettings()
-        Firestore.firestore().settings = settings
-        db = Firestore.firestore()
-    }
+    
+    @State var activateNavigation = false
     
     var body: some View {
+        
+        //NavigationLink(destination: StartingView(), isActive: $activateNavigation) {}
         
         ScrollView {
             
@@ -46,7 +38,9 @@ struct RegistrationView: View {
             }.padding()
             
             
-        }.navigationBarTitle("Зарегистрироваться")
+        }.navigationBarTitle("Зарегистрироваться").sheet(isPresented: $activateNavigation, content: {
+            StartingView()
+        })
     }
     
     
@@ -60,7 +54,10 @@ struct RegistrationView: View {
                 
                 print("Registration Success \(String(describing: user.email))")
                 
-                createUserData()
+                FirestoreService.shared.createUser(id: user.uid, email: user.email ?? "", name: "", location: "", publish: "", status: "", company: "", badge: "", instagramLink: "")
+                
+                activateNavigation = true
+                
                 
             case .failure(let error):
                 print("Registration Error")
@@ -68,23 +65,6 @@ struct RegistrationView: View {
                 self.error = error.localizedDescription
             }
         }
-    }
-    
-    func createUserData() {
-        
-        var ref: DocumentReference? = nil
-            ref = self.db.collection("users").addDocument(data: [
-                "email": self.email,
-                "id": ref?.documentID ?? ""
-
-        ]) { error in
-            if let error = error {
-                print("Error adding document: \(error)")
-            } else {
-                print("Document added with ID: \(ref!.documentID)")
-            }
-        }
-        
     }
 }
 

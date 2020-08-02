@@ -8,8 +8,6 @@
 
 import SwiftUI
 import M7SwiftUI
-import Firebase
-import FirebaseAuth
 
 struct LoginView: View {
     

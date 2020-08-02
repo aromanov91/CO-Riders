@@ -8,8 +8,6 @@
 
 import SwiftUI
 import M7SwiftUI
-import FirebaseFirestore
-import FirebaseFirestoreSwift
 
 struct ProfileEditView: View {
     
@@ -18,16 +16,7 @@ struct ProfileEditView: View {
     @State var about = ""
     @State var phone = ""
     @State var instagram = ""
-    
-    var db: Firestore!
 
-    init() {
-
-        let settings = FirestoreSettings()
-        Firestore.firestore().settings = settings
-        db = Firestore.firestore()
-        
-    }
     
     var body: some View {
         ScrollView {
@@ -65,11 +54,11 @@ struct ProfileEditView: View {
                     Text("Подключите инстаграм")
                 }
                 
-                M7Button(style: .primary, action: { updateUserId(withUid: "OAZtJy4oBo0hKnNNTRkl", toNewName: name)
+                M7Button(style: .primary, action: { //updateUserId(withUid: "OAZtJy4oBo0hKnNNTRkl", toNewName: name)
                     
                     if company != "" {
                         
-                        updateUserField(withUid: "OAZtJy4oBo0hKnNNTRkl", andField: "company", toNewValue: self.company)
+                       // updateUserField(withUid: "OAZtJy4oBo0hKnNNTRkl", andField: "company", toNewValue: self.company)
                         
                     }
                     
@@ -87,15 +76,8 @@ struct ProfileEditView: View {
         }.navigationBarTitle("Расскажите о себе", displayMode: .inline)
     }
     
-  
-        func updateUserId(withUid: String, toNewName: String) {
-            self.db.collection("users").document(withUid).setData( ["id": toNewName], merge: true)
-        }
     
-    
-            func updateUserField(withUid: String, andField: String, toNewValue: String) {
-                self.db.collection("users").document(withUid).setData( [andField: toNewValue], merge: true)
-            }
+
     
 }
 

@@ -12,30 +12,30 @@ import M7SwiftUI
 struct ProfileEmptyView: View {
     var body: some View {
         
-        ScrollView {
+        VStack {
             
-            UserInformationLinkView().padding()
+            UserInformationLinkView().padding(.horizontal)
             
-            Spacer()
-            
-            VStack {
+            ScrollView {
                 
-                HStack {
+                VStack {
                     
-                    M7Text("Вы еще не разместили ни одного объявления", style: .title1).frame(width: 300.0)
+                    HStack {
+                        
+                        M7Text("Вы еще не разместили ни одного объявления", style: .title1).frame(width: 300.0)
+                    }
+                    
+                    Spacer()
+                    
+                    M7Text("Расскажите миру о своих услугах. Расместите объявление и найдите новых клиентов!", style: .paragraph1).frame(width: 300.0)
+                    
+                    Spacer()
+                    
+                    NavigationLink("Новое объявление", destination: NewRideCategoryView())
+                    
                 }
                 
-                Spacer()
-                
-                M7Text("Расскажите миру о своих услугах. Расместите объявление и найдите новых клиентов!", style: .paragraph1).frame(width: 300.0)
-                
-                Spacer()
-                
-                NavigationLink("Новое объявление", destination: NewRideCategoryView())
-                
             }
-            
-            Spacer()
         }
     }
 }

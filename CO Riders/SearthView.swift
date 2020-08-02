@@ -57,16 +57,30 @@ class SearthViewModel: ObservableObject {
                                                    type: type,
                                                    serviceType: serviceType))
                     }
-                    print(self.data)
+                    //print(self.data)
                 }
             }
         }
+        
+       
+        
+        
     }
 }
 
 struct SearthView: View {
     
     @ObservedObject var viewModel = SearthViewModel()
+    
+    
+    init () {
+        
+        
+        FirestoreService.shared.getUserData()
+        
+       //FirestoreService.shared.createUser(id: "", email: "fsd", name: "", location: "", publish: "", status: "", company: "", badge: "", instagramLink: "")
+        
+    }
     
     var body: some View {
         

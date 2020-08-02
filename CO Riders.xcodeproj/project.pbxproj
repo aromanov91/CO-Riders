@@ -26,6 +26,9 @@
 		3A8CA4B224C7828A00736AE4 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A8CA4A924C7822500736AE4 /* Montserrat-Regular.ttf */; };
 		3A8CA4B324C7828A00736AE4 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A8CA4A524C7822000736AE4 /* Montserrat-SemiBold.ttf */; };
 		3A8CA4B424C7828A00736AE4 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A8CA4AA24C7822700736AE4 /* Montserrat-Thin.ttf */; };
+		3A8CD18A24D0C3050072C7A1 /* StartingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CD18924D0C3050072C7A1 /* StartingView.swift */; };
+		3A8CD18C24D56D6A0072C7A1 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CD18B24D56D6A0072C7A1 /* FirestoreService.swift */; };
+		3A8CD18E24D615FF0072C7A1 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CD18D24D615FF0072C7A1 /* SessionService.swift */; };
 		3A90810A24BE53BD003AA7FB /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90810924BE53BD003AA7FB /* AuthService.swift */; };
 		3A90810C24BE5663003AA7FB /* NewAnnouncementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90810B24BE5663003AA7FB /* NewAnnouncementView.swift */; };
 		3A90810E24BE5A13003AA7FB /* SearthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90810D24BE5A13003AA7FB /* SearthView.swift */; };
@@ -67,6 +70,9 @@
 		3A8CA4A824C7822400736AE4 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
 		3A8CA4A924C7822500736AE4 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		3A8CA4AA24C7822700736AE4 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		3A8CD18924D0C3050072C7A1 /* StartingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingView.swift; sourceTree = "<group>"; };
+		3A8CD18B24D56D6A0072C7A1 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		3A8CD18D24D615FF0072C7A1 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
 		3A90810924BE53BD003AA7FB /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		3A90810B24BE5663003AA7FB /* NewAnnouncementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAnnouncementView.swift; sourceTree = "<group>"; };
 		3A90810D24BE5A13003AA7FB /* SearthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearthView.swift; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 				3A90811124BF9FBF003AA7FB /* RootView.swift */,
 				3A06E9E824CB78D8003571EA /* NewRide */,
 				3A8CA4B624C79BA200736AE4 /* Profile */,
+				3A8CD18924D0C3050072C7A1 /* StartingView.swift */,
 				3A90810D24BE5A13003AA7FB /* SearthView.swift */,
 				3A9AE46024CF613400EC8EE7 /* RideDetailView.swift */,
 				3A90810B24BE5663003AA7FB /* NewAnnouncementView.swift */,
@@ -191,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				3A90810924BE53BD003AA7FB /* AuthService.swift */,
+				3A8CD18B24D56D6A0072C7A1 /* FirestoreService.swift */,
+				3A8CD18D24D615FF0072C7A1 /* SessionService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -355,9 +364,12 @@
 				3A90811224BF9FBF003AA7FB /* RootView.swift in Sources */,
 				3A8ADE8524BE4777001113DD /* AppDelegate.swift in Sources */,
 				3AC41C4024CB83CB004100DB /* NewRideTwoView.swift in Sources */,
+				3A8CD18A24D0C3050072C7A1 /* StartingView.swift in Sources */,
 				3AD2FB8D24CA36CE0016D39B /* UserInformationLinkView.swift in Sources */,
 				3AC41C3E24CB8079004100DB /* NewRideViewModel.swift in Sources */,
+				3A8CD18C24D56D6A0072C7A1 /* FirestoreService.swift in Sources */,
 				3AB6A26A24CD895000307A3A /* NewRideCreateFormView.swift in Sources */,
+				3A8CD18E24D615FF0072C7A1 /* SessionService.swift in Sources */,
 				3A06E9E724CB78CC003571EA /* NewRideCategoryView.swift in Sources */,
 				3A90811024BF8CC7003AA7FB /* LoginView.swift in Sources */,
 				3AD2FB9124CA3AE60016D39B /* ProfileEditView.swift in Sources */,
